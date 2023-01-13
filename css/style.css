@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #222;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.header .container{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}  
+
+.header .container span{
+    color: #05f096;
+}
+
+
+.add .container{
+    display:flex;
+    justify-content: space-between;
+    margin: 10px 120px;
+    align-items: center;
+}
+
+.add .container button{
+    width:120px;
+    height: 35px;
+    background-color: #05f096;
+    border: 0;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.add .container button:hover{
+    font-size: 14px;
+    background-color: #05f096e1;
+    border: 1px solid #fff;
+}
+
+.add .container textarea{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.13);
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #05f0965f;
+}
+
+.add .container textarea:focus{
+    border: 1px solid #05f096;
+}
+
+.add .container textarea::placeholder{
+    color: #05f0965f;
+}
+
+.add .error{
+    display: none;
+    justify-content: center;
+    font-size: 14px;
+    font-family: monospace;
+    color: red
+}
+
+.add .warning{
+    display: none;
+    justify-content: center;
+    font-size: 14px;
+    font-family: monospace;
+    color: #FFB833;
+}
+
+ hr{
+    margin: 25px auto;
+    width: 500px;
+    height: 5px;
+    background-color: #05f096;
+    border: 0;
+    border-radius: 10px;
+}
+
+
+.items .todo-list{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin: 0 auto;
+}
+
+.items .todo-list li{
+    list-style: none;
+    padding: 15px 20px;
+    margin-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.items .todo-list li .done,
+.items .todo-list li .delete{
+    float: right;
+    margin-left: 10px;
+    width:65px;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #05f0969a;
+    font-weight: 700;
+}
+
+.items .todo-list li .done:hover{
+    font-size: 11px;
+    border: 1px solid #05f096;
+}
+
+.items .todo-list li .delete:hover{
+    border: 1px solid #ff0000e1;
+    color: #ff0000e1;
+}
+
+footer{
+    /* max-width: 750px; */
+    /* margin: 0 auto; */
+    height: 80px;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+    body{
+        margin: 0 auto;
+        /* scale: 0.5; */
+    }
+    .add .container{
+        display:flex;
+        flex-direction: column;
+    }
+    .add .container textarea{
+        margin-bottom: 20px;
+    }
+    hr{
+        width: 90vw;
+    }
+}
+
+@media (max-width: 425px) {
+    .items .todo-list li .done,
+    .items .todo-list li .delete{
+        width:auto;
+        height: 25px;
+        font-size: 10px;
+        padding: 0 2px;
+        margin-left: 5px;
+    }
+    .items .todo-list li{
+        /* align-items: center; */
+        line-height: 22px;
+        padding-right: 5px;
+        padding-left: 10px;
+        font-size: 11px;
+        width: 90vw;
+        margin-left: 5vw;
+    } 
+}

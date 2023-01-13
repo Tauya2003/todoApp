@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <title>TodoApp</title>
+</head>
+<body>
+    <!-- Header Section Start -->
+    <header class="header">
+        <div class="container">
+            <h1>To<span>doA</span>pp</h1>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Add Section Start -->
+    <section class="add">
+        <div class="container">
+            <textarea maxlength="31" id="todoText" cols="20" rows="1" placeholder="example todo..."></textarea>
+            <button class="add-todo">Add</button>
+        </div>
+        <p class="error">Please fill enter your todo!</p>
+        <p class="warning">You have reached the maximum number of characters required!</p>
+    </section>
+    <hr>
+    <!-- Add Section End -->
+
+    <!-- Items Section Start -->
+    <section class="items">
+            <ul class="todo-list">
+                <li class="todo-item" data-aos="fade-up">
+                    <span>Meeting with the boss</span>  
+                    <button class="done">Done</button>
+                    <button class="delete">delete</button>
+                </li>
+
+                <li class="todo-item" data-aos="fade-up">
+                    <span>Complete my assignment</span>
+                    <button class="done">Done</button>
+                    <button class="delete">delete</button>
+                </li>
+
+               
+            </ul>
+    </section>
+    <!-- Items Section End -->
+
+    <!-- Footer Start -->
+    <footer>
+            <!-- copyright text -->
+        <p class="copyright">&copy;2023 ayuat2003</p>
+    </footer>
+    <!-- Footer Start -->
+
+    <script src="js/main.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            offset:50
+        });
+    </script>
+</body>
+</html>
